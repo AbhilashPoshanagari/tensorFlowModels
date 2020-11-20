@@ -23,7 +23,7 @@ export class IrisClassifierComponent implements OnInit {
     this.createModel();
   }
   loadModel(){
-    const csvUrl = './assets/iris/iris.csv';
+    const csvUrl = './docs/assets/iris/iris.csv';
     this.trainingData = tf.data.csv(csvUrl, {
         columnConfigs: {
             species: {
